@@ -1,0 +1,15 @@
+D:\Visual Studio\WindownForm\Windown programming 17-1\bin\Debug\Windown programming 17-1.exe.config
+D:\Visual Studio\WindownForm\Windown programming 17-1\bin\Debug\Windown programming 17-1.exe
+D:\Visual Studio\WindownForm\Windown programming 17-1\bin\Debug\Windown programming 17-1.pdb
+D:\Visual Studio\WindownForm\Windown programming 17-1\bin\Debug\System.Data.SqlClient.dll
+D:\Visual Studio\WindownForm\Windown programming 17-1\bin\Debug\System.Data.SqlClient.xml
+D:\Visual Studio\WindownForm\Windown programming 17-1\obj\Debug\Windown programming 17-1.csproj.AssemblyReference.cache
+D:\Visual Studio\WindownForm\Windown programming 17-1\obj\Debug\Windown_programming_17_1.Properties.Resources.resources
+D:\Visual Studio\WindownForm\Windown programming 17-1\obj\Debug\Windown programming 17-1.csproj.GenerateResource.cache
+D:\Visual Studio\WindownForm\Windown programming 17-1\obj\Debug\Windown programming 17-1.csproj.CoreCompileInputs.cache
+D:\Visual Studio\WindownForm\Windown programming 17-1\obj\Debug\Windown programming 17-1.csproj.CopyComplete
+D:\Visual Studio\WindownForm\Windown programming 17-1\obj\Debug\Windown programming 17-1.exe
+D:\Visual Studio\WindownForm\Windown programming 17-1\obj\Debug\Windown programming 17-1.pdb
+D:\Visual Studio\WindownForm\Windown programming 17-1\obj\Debug\Windown_programming_17_1.TeacherForm.resources
+D:\Visual Studio\WindownForm\Windown programming 17-1\obj\Debug\Windown_programming_17_1.StudentFormFinal.resources
+D:\Visual Studio\WindownForm\Windown programming 17-1\obj\Debug\Windown_programming_17_1.UCInformation.resources
