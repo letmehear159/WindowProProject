@@ -14,7 +14,7 @@ namespace Windown_programming_17_1
         private DateTime birthDate;
         private string email;
         private string phone;
-        public Person(string name, string address, string cmnd, DateTime birthDate, string email, string phone)
+        public Person(string name, string address, string cmnd, DateTime birthDate, string phone, string email)
         {
             this.name = name;
             this.address = address;

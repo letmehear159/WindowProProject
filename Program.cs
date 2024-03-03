@@ -16,7 +16,7 @@ namespace Windown_programming_17_1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TeacherForm());
+            Application.Run(new StudentFormFinal());
         }
     }
 }
