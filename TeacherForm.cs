@@ -39,7 +39,8 @@ namespace Windown_programming_17_1
 
         private void btnThem_Click_1(object sender, EventArgs e)
         {
-            Teacher newTeacher = new Teacher(ucInformation1.tbName.Text, ucInformation1.tbAddress.Text,
+            string genderValue = UCInformation.getGenderFromRadio(ucInformation1);
+            Teacher newTeacher = new Teacher(ucInformation1.tbID.Text, genderValue, ucInformation1.tbName.Text, ucInformation1.tbAddress.Text,
                 ucInformation1.tbCMND.Text, ucInformation1.dtBirthDate.Value, ucInformation1.tbPhone.Text, ucInformation1.tbEmail.Text);
             teacherDAO.add(newTeacher);
             refreshGV();
@@ -52,7 +53,8 @@ namespace Windown_programming_17_1
 
         private void btnXoa_Click_1(object sender, EventArgs e)
         {
-            Teacher deleteTeacher = new Teacher(ucInformation1.tbName.Text, ucInformation1.tbAddress.Text,
+            string genderValue = UCInformation.getGenderFromRadio(ucInformation1);
+            Teacher deleteTeacher = new Teacher(ucInformation1.tbID.Text, genderValue, ucInformation1.tbName.Text, ucInformation1.tbAddress.Text,
                 ucInformation1.tbCMND.Text, ucInformation1.dtBirthDate.Value, ucInformation1.tbPhone.Text, ucInformation1.tbEmail.Text);
             teacherDAO.delete(deleteTeacher);
             refreshGV();
@@ -60,7 +62,8 @@ namespace Windown_programming_17_1
 
         private void btnSua_Click_1(object sender, EventArgs e)
         {
-            Teacher changeTeacher = new Teacher(ucInformation1.tbName.Text, ucInformation1.tbAddress.Text,
+            string genderValue = UCInformation.getGenderFromRadio(ucInformation1);
+            Teacher changeTeacher = new Teacher(ucInformation1.tbID.Text, genderValue, ucInformation1.tbName.Text, ucInformation1.tbAddress.Text,
                 ucInformation1.tbCMND.Text, ucInformation1.dtBirthDate.Value, ucInformation1.tbPhone.Text, ucInformation1.tbEmail.Text);
             teacherDAO.adjust(changeTeacher);
             refreshGV();
@@ -78,6 +81,15 @@ namespace Windown_programming_17_1
                     ucInformation1.tbCMND.Text = selectedRow.Cells["CMND"].Value.ToString();
                     ucInformation1.tbPhone.Text = selectedRow.Cells["Phone"].Value.ToString();
                     ucInformation1.tbEmail.Text = selectedRow.Cells["Phone"].Value.ToString();
+                    string gender = selectedRow.Cells["Gender"].Value.ToString();
+                    if (gender.Equals("Nam"))
+                    {
+                        ucInformation1.rbNam.Checked = true;
+                    }
+                    else
+                    {
+                        ucInformation1.rbNu.Checked = true;
+                    }
                     DateTime dateTimeValue;
                     if (DateTime.TryParse(selectedRow.Cells["BirthDate"].Value.ToString(), out dateTimeValue))
                     {

@@ -8,14 +8,18 @@ namespace Windown_programming_17_1
 {
     internal class Person
     {
+        private string id;
+        private string gender;
         private string name;
         private string address;
         private string cmnd;
         private DateTime birthDate;
         private string email;
         private string phone;
-        public Person(string name, string address, string cmnd, DateTime birthDate, string phone, string email)
+        public Person(string id, string gender, string name, string address, string cmnd, DateTime birthDate, string phone, string email)
         {
+            this.id = id;
+            this.gender = gender;
             this.name = name;
             this.address = address;
             this.cmnd = cmnd;
@@ -41,6 +45,14 @@ namespace Windown_programming_17_1
         public string getCMND()
         {
             return this.cmnd;
+        }
+        public string getId()
+        {
+            return this.id;
+        }
+        public string getGender()
+        {
+            return this.gender;
         }
 
         public string getPhone()

@@ -33,9 +33,9 @@
             // 
             // ucInformation2
             // 
-            this.ucInformation2.Location = new System.Drawing.Point(28, 12);
+            this.ucInformation2.Location = new System.Drawing.Point(39, 12);
             this.ucInformation2.Name = "ucInformation2";
-            this.ucInformation2.Size = new System.Drawing.Size(832, 473);
+            this.ucInformation2.Size = new System.Drawing.Size(849, 486);
             this.ucInformation2.TabIndex = 0;
             // 
             // StudentFormFinal
@@ -53,7 +53,6 @@
 
         #endregion
 
-        private UCInformation ucInformation1;
         private UCInformation ucInformation2;
     }
 }

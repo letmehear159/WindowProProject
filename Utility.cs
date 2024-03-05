@@ -32,6 +32,38 @@ namespace Windown_programming_17_1
                 MessageBox.Show("Invalid Email");
                 return false;
             }
+            else if (!checkGenderValid(person))
+            {
+                MessageBox.Show("Gender is null!");
+                return false;
+            }
+            else if (!checkIDValid(person))
+            {
+                MessageBox.Show("ID only contain digit!");
+                return false;
+            }
+            return true;
+        }
+        public static bool checkGenderValid(Person person)
+        {
+            if (string.IsNullOrEmpty(person.getGender()))
+            {
+                return false;
+            }
+            return true;
+        }
+        public static bool checkIDValid(Person person)
+        {
+            if (string.IsNullOrEmpty(person.getId()))
+            {
+                return false;
+            }
+            for (int i = 0; i < person.getId().Length; i++)
+            {
+
+                if (!char.IsDigit(person.getId()[i]))
+                    return false;
+            }
             return true;
         }
         public static bool isValidValuePassed(Person person)
@@ -49,7 +81,9 @@ namespace Windown_programming_17_1
                 return false;
             }
             return true;
+
         }
+
         public static bool checkPhoneValid(string phoneNum)
         {
             for (int i = 0; i < phoneNum.Length; i++)
@@ -134,3 +168,4 @@ namespace Windown_programming_17_1
 
     }
 }
+

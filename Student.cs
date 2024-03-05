@@ -11,7 +11,8 @@ namespace Windown_programming_17_1
 {
     internal class Student : Person
     {
-        public Student(string name, string address, string cmnd, DateTime birthDate, string phone, string email) : base(name, address, cmnd, birthDate, phone, email)
+        public Student(string id, string gender, string name, string address, string cmnd, DateTime birthDate, string phone, string email) :
+            base(id, gender, name, address, cmnd, birthDate, phone, email)
         {
         }
     }
